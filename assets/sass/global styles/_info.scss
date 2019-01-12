@@ -1,0 +1,122 @@
+.info {
+  background-color: #292929;
+  .wrap {
+    text-align: left;
+    padding-top: 60px;
+  }
+  &_wrap_contact-form {
+    margin: 50px 0;
+    display: flex;
+    align-items: flex-start;
+  }
+  .logo_light {
+    display: inline-block;
+    margin-left: 15px;
+  }
+}
+
+.contact-form {
+  &_text-block {
+    width: 33%;
+    padding: 0 15px;
+    box-sizing: border-box;
+    &_title-block {
+      margin: 40px 0 30px;
+    }
+    &_desc {
+      color: #949494;
+    }
+  }
+  &_form {
+    width: 66%;
+    display: flex;
+    flex-flow: row wrap;
+    padding: 0 15px;
+    box-sizing: border-box;
+    &_input {
+      min-width: 200px;
+      margin: 0 auto 20px;
+      flex-basis: 48%;
+      padding: 0 25px;
+      height: 55px;
+      color: #949494;
+      border: 2px solid #464646;
+      background-color: inherit;
+      box-sizing: border-box;
+      font-style: italic;
+      font-size: 14px;
+      font-family: "Crimson Text", sans-serif;
+    }
+    &_message {
+      padding: 25px;
+      height: 100px;
+      flex-basis: 98%;
+      margin: 0 auto 20px;
+      border: 2px solid #464646;
+      background-color: inherit;
+      box-sizing: border-box;
+      font-family: "Crimson Text", sans-serif;
+      font-style: italic;
+      font-size: 14px;
+    }
+    &_button {
+      margin: 0;
+      padding: 15px 40px;
+      color: #e3e3e3;
+      font-family: "Montserrat", sans-serif;
+      font-size: 13px;
+      background-color: #464646;
+      border: none;
+      letter-spacing: 1.47px;
+    }
+  }
+
+  &_contact-text {
+    max-width: 295px;
+    margin: 35px 0 40px;
+    font-family: "Montserrat", sans-serif;
+    font-size: 13px;
+    text-transform: uppercase;
+    color: #f2f2f2;
+    line-height: 18px;
+
+  }
+}
+
+.short {
+  max-width: 245px;
+  margin: 0;
+}
+
+.map {
+  width: 100%;
+}
+
+@media only screen and(max-width: 768px) {
+  .contact-form {
+    &_form {
+      &_input {
+        flex-basis: 100%;
+      }
+      &_textarea {
+        flex-basis: 100%;
+      }
+    }
+  }
+}
+
+@media only screen and(max-width: 585px) {
+  .info_wrap_contact-form {
+    flex-flow: column nowrap;
+  }
+  .contact-form{
+    &_text-block {
+      width: 100%;
+    }
+    &_form{
+      margin-top: 30px;
+      width: 100%;
+    }
+  }
+}
+

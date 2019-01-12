@@ -1,0 +1,19 @@
+.social-links-list{
+  display: inline-flex;
+
+  a{
+    color: #a4a4a4;
+    font-size: 12px;
+    padding: 0 5px;
+    &:hover{
+      color: #838383;
+    }
+  }
+}
+.twitter{
+  border-left: 1px solid #aaa;
+  border-right: 1px solid #aaa;
+}
+
+
+

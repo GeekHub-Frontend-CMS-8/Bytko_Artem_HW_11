@@ -1,0 +1,77 @@
+.hero {
+  padding: 240px 0 160px;
+  background-image: url("../../img/Image.png");
+  background-size: cover;
+  .wrap{
+    position: relative;
+  }
+  &_holder{
+    width: 515px;
+  }
+  &_wavyLine{
+    width: 515px;
+  }
+  &_button {
+    top: 20px;
+    padding: 10px 20px;
+    color: #fff;
+    position: relative;
+    border: 2px solid #fff;
+    &:after {
+      content: url("../../img/Arrow.png");
+      position: absolute;
+      right: 45%;
+      bottom: 0;
+      margin-bottom: -47px;
+    }
+    &:hover {
+      color: #3e3d3d;
+      background-color: #f2f2f2;
+    }
+  }
+}
+
+.next, .prev {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+  top: 50%;
+  width: 35px;
+  height: 35px;
+  color: #3e3d3d;
+  background-color: #fff;
+  border-radius: 50%;
+  font-size: 25px;
+}
+
+.next {
+  right: 0;
+}
+
+.prev {
+  left: 0;
+}
+.fade {
+  animation-name: fade;
+  animation-duration: 1.5s;
+}
+
+@keyframes fade {
+  from {
+    opacity: .4
+  }
+  to {
+    opacity: 1
+  }
+}
+@media all and (max-width: 600px) {
+  .hero {
+    &_holder {
+      width: calc(100vw - 60px);
+    }
+    &_wavyLine {
+      width: calc(100vw - 60px);
+    }
+  }
+}

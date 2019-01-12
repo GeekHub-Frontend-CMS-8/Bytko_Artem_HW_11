@@ -1,0 +1,40 @@
+.services {
+  padding: 70px 0 85px;
+  background-image: url("../../img/bg_services.png");
+  background-size: cover;
+  &-list {
+    margin-top: 40px;
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+  }
+  &_items {
+    width: 21%;
+    min-width: 260px;
+    border: 1px solid #fff;
+    border-top: none;
+    margin: 30px 15px 0;
+    box-sizing: border-box;
+    .desc{
+      padding: 30px 35px 45px;
+    }
+    &_top-border{
+      display: flex;
+    }
+    &_line-right, &_line-left{
+      margin-bottom: 60px;
+      width: 36%;
+      height: 1px;
+      background-color: #fff;
+    }
+    &_title-block {
+      max-width: 105px;
+      margin: 0 auto;
+    }
+  }
+}
+.top-icon{
+  margin-top: -10px;
+  width: 28%;
+  display: inline-block;
+}

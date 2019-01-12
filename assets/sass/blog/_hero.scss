@@ -1,0 +1,43 @@
+.hero {
+  padding: 170px 0 120px;
+  background-image: url("../../img/blog/blog__background__image.png");
+  background-size: cover;
+  text-align: center;
+  &-title {
+    color: #fff;
+    font-size: 36px;
+    font-family: "Amsdam Regular", sans-serif;
+    text-transform: uppercase;
+  }
+  &_holder {
+    margin: 30px auto 0;
+    overflow: hidden;
+    position: relative;
+    height: 40px;
+    width: 320px;
+  }
+  &_wavyLine {
+    position: absolute;
+    width: 320px;
+    height: 5px;
+    &-light2 {
+      background: linear-gradient(45deg, transparent, transparent 49%, #fff, transparent 51%);
+    }
+    &-light1 {
+      background: linear-gradient(-45deg, transparent, transparent 49%, #fff, transparent 51%);
+    }
+  }
+  &_wavyLine {
+    background-size: 10px 10px;
+  }
+  &_navigation-line {
+    color: #fff;
+    font-family: "Crimson Text - Roman", sans-serif;
+    font-size: 14px;
+  }
+  a{
+    color: #fff;
+  }
+}
+
+

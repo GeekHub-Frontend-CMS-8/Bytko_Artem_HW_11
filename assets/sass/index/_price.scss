@@ -1,0 +1,131 @@
+.price {
+  padding: 70px 0 0;
+  background-color: #e3e3e3;
+  &-list {
+    margin: 50px 0 90px;
+    display: flex;
+    justify-content: space-between;
+  }
+  &_desc {
+    color: #3e3d3d;
+    font-family: "Crimson Text", sans-serif;
+    font-size: 16px;
+    font-style: italic;
+  }
+  &_button {
+    margin: 0 auto;
+    background-color: inherit;
+    border-color: #e3e3e3;
+    font-size: 13px;
+    color: #e3e3e3;
+  }
+  &_items {
+    margin: 30px 10px 0;
+    flex-basis: 32%;
+    padding: 50px;
+    background-color: #fff;
+    box-sizing: border-box;
+    &_top-border {
+      margin: 25px 0;
+      display: flex;
+      align-items: center;
+    }
+    &_icon {
+      width: 50px;
+      height: 50px;
+      border: 2px solid #3e3d3d;
+      background-color: #fff;
+      border-radius: 50%;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      top: 90px;
+      left: 43%;
+    }
+    &_line-right, &_line-left {
+      width: 36%;
+      height: 1px;
+      background-color: #3e3d3d;
+    }
+    &_content {
+      &_price {
+        color: #3e3d3d;
+        font-family: "Montserrat", sans-serif;
+        font-size: 70px;
+        font-weight: 700;
+        position: relative;
+        &:before {
+          content: "$";
+          position: absolute;
+          left: 0;
+          margin-top: -5px;
+          margin-left: -25px;
+          color: #3e3d3d;
+          font-family: "Montserrat", sans-serif;
+          font-size: 28px;
+          font-weight: 700;
+        }
+      }
+      &_services-list {
+        margin-top: 40px;
+        display: flex;
+        flex-flow: column;
+        align-items: center;
+      }
+      &_items {
+        margin: 10px 0;
+      }
+      &_button {
+        margin-top: 40px;
+        font-size: 13px;
+      }
+    }
+  }
+  &_purchase-block {
+    padding: 40px 0;
+    background-color: #2d2d2f;
+
+    .wrap {
+      align-items: center;
+      display: flex;
+      text-align: left;
+    }
+    &_text-block {
+      margin: 0 10px 0 40px;
+      max-width: 615px;
+      &_title {
+        margin-bottom: 20px;
+        color: #d8d8d8;
+        font-family: "Montserrat", sans-serif;
+        font-size: 16px;
+        font-weight: bold;
+      }
+    }
+    &_desc {
+      color: #888888;
+    }
+  }
+}
+
+@media only screen and(max-width: 700px) {
+  .price {
+    &-list {
+      flex-flow: row wrap;
+      justify-content: center;
+    }
+    &_items {
+      min-width: 250px;
+    }
+    &_purchase-block {
+      .wrap {
+        flex-flow: column nowrap;
+      }
+      img {
+        margin-bottom: 30px;
+      }
+    }
+    &_desc{
+      margin-bottom: 30px;
+    }
+  }
+}
